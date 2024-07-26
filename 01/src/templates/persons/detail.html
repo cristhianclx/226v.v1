@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Persons - Detail</title>
+{% endblock %}
+
+{% block body %}
+    <h1>Persons - Detail</h1>
+    <hr>
+    <a href="{% url 'persons-list' %}" class="btn btn-primary">Go back</a>
+    <hr>
+    <p><b>ID:</b> {{ item.id }}</p>
+    <p><b>Name:</b> {{ item.name }}</p>
+    <p><b>Age:</b> {{ item.age }}</p>
+    {% if item.description %}
+    <p><b>Description:</b> {{ item.description }}</p>
+    {% endif %}
+{% endblock %}

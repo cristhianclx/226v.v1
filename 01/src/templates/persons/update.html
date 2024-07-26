@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Persons - Update</title>
+{% endblock %}
+
+{% block body %}
+<h1>Persons - Update</h1>
+    <hr>
+    <a href="{% url 'persons-list' %}" class="btn btn-primary">Go back</a>
+    <hr>
+    <form method="POST" action="{% url 'persons-update' id=item.id %}" novalidate>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary btn-lg">Update</button>
+    </form>
+{% endblock %}
