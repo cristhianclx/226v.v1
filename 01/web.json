@@ -1,0 +1,57 @@
+[
+{
+  "model": "web.person",
+  "pk": 1,
+  "fields": {
+    "name": "Cristhian",
+    "age": 25,
+    "description": "",
+    "created": "2024-07-26T01:36:25.399Z",
+    "updated": "2024-07-26T02:41:40.074Z"
+  }
+},
+{
+  "model": "web.person",
+  "pk": 2,
+  "fields": {
+    "name": "Jesus",
+    "age": 33,
+    "description": ":D",
+    "created": "2024-07-26T01:36:54.453Z",
+    "updated": "2024-07-26T02:41:13.248Z"
+  }
+},
+{
+  "model": "web.person",
+  "pk": 4,
+  "fields": {
+    "name": "Alejandro",
+    "age": 50,
+    "description": "+1",
+    "created": "2024-07-26T02:33:44.850Z",
+    "updated": "2024-07-26T02:33:44.850Z"
+  }
+},
+{
+  "model": "web.person",
+  "pk": 5,
+  "fields": {
+    "name": "Raul",
+    "age": 28,
+    "description": "",
+    "created": "2024-07-26T02:47:10.094Z",
+    "updated": "2024-07-26T02:47:10.094Z"
+  }
+},
+{
+  "model": "web.persondetail",
+  "pk": 1,
+  "fields": {
+    "person": 1,
+    "details": "Python",
+    "rating": 5,
+    "created": "2024-07-26T01:42:10.232Z",
+    "updated": "2024-07-26T01:42:10.232Z"
+  }
+}
+]

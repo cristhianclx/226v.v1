@@ -22,3 +22,7 @@ python src/manage.py runserver # correr el proyecto en django
 python src/manage.py makemigrations # crea la migracion
 python src/manage.py migrate # corre la migracion
 python src/manage.py createsuperuser # crea un usuario interno
+
+python src/manage.py dumpdata --indent=2 web > web.json
+python src/manage.py dumpdata --indent=2 web.person > person.json
+python src/manage.py loaddata web.json
