@@ -17,7 +17,7 @@ class Search(models.Model):
     cv = models.FileField(
         upload_to="cv",
         blank=False,
-        validators=[FileExtensionValidator(allowed_extensions=["docx"])]
+        validators=[FileExtensionValidator(allowed_extensions=["docx", "pdf"])]
     )
     created_at = models.DateTimeField(
         auto_now_add=True,

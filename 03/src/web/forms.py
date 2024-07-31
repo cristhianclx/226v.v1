@@ -8,7 +8,7 @@ class SearchForm(forms.ModelForm):
         widget=forms.FileInput(
             attrs={
                 "class": "form-control",
-                "accept": ".docx",
+                "accept": ".docx,.pdf",
             }
         )
     )
