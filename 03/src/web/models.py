@@ -23,6 +23,9 @@ class Search(models.Model):
         auto_now_add=True,
     )
 
+    def __str__(self):
+        return str(self.id)
+
 
 class Match(models.Model):
     search = models.ForeignKey(
