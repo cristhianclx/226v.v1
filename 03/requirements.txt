@@ -5,3 +5,5 @@ pypdf
 scipy
 scikit-learn
 requests
+black
+flake8
