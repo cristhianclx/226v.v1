@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.shortcuts import render, redirect
 from django.views.generic import View
 from web.forms import SearchForm
@@ -9,9 +10,9 @@ import pandas as pd
 import pickle
 
 
-job_matrix = pickle.load(open("./src/web/data/job_matrix.pickle", "rb"))
-job_vectorizer = pickle.load(open("./src/web/data/job_vectorizer.pickle", "rb"))
-ranker = pd.read_pickle("./src/web/data/puestos.pickle")
+job_matrix = pickle.load(open(str(settings.BASE_DIR) + "/./web/data/job_matrix.pickle", "rb"))
+job_vectorizer = pickle.load(open(str(settings.BASE_DIR) + "/./web/data/job_vectorizer.pickle", "rb"))
+ranker = pd.read_pickle(str(settings.BASE_DIR) + "/./web/data/puestos.pickle")
 
 
 class HomeView(View):

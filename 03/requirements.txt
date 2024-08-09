@@ -7,3 +7,4 @@ scikit-learn
 requests
 black
 flake8
+gunicorn[gevent]

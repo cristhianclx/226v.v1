@@ -28,3 +28,11 @@ python src/manage.py dumpdata --indent=2 web.person > person.json
 python src/manage.py loaddata web.json
 
 python src/manage.py get_all_from_bumeran
+
+heroku login
+- runtime.txt
+- Procfile
+heroku create
+git add .
+git commit -m "something"
+git push heroku main
